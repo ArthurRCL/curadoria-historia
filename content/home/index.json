@@ -49,9 +49,9 @@
   "videoButtonLabel": "Ver análise",
   "videos": [
     {
-      "title": "Revolução Francesa — explicação extensa",
-      "subtitle": "50:17",
-      "youtubeUrl": "",
+      "title": "Revolução Francesa: Tudo que você precisa saber!",
+      "subtitle": "Resumo de História",
+      "youtubeUrl": "https://youtu.be/ceCcZooYDBo",
       "analysis": "Escreva aqui a análise deste vídeo, considerando os critérios de **narrativa**, **fontes**, **temporalidade**, **participação** e **usos públicos do passado**.\n"
     },
     {
