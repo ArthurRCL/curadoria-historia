@@ -3,16 +3,30 @@
     "siteName": "Curadoria Digital",
     "siteTagline": "Débora Aladim",
     "nav": [
-      { "label": "Início", "href": "#inicio" },
-      { "label": "A Curadoria", "href": "#curadoria" },
-      { "label": "Vídeos e Comentários", "href": "#videos" },
-      { "label": "Síntese Comparativa", "href": "#sintese" },
-      { "label": "Referências", "href": "#referencias" }
+      {
+        "label": "Início",
+        "href": "#inicio"
+      },
+      {
+        "label": "A Curadoria",
+        "href": "#curadoria"
+      },
+      {
+        "label": "Vídeos e Comentários",
+        "href": "#videos"
+      },
+      {
+        "label": "Síntese Comparativa",
+        "href": "#sintese"
+      },
+      {
+        "label": "Referências",
+        "href": "#referencias"
+      }
     ],
     "title": "História para o público ou História Pública?",
     "subtitle": "Uma curadoria digital comentada sobre Débora Aladim",
-    "backgroundImage": "/uploads/hero-biblioteca.jpg",
-    "portrait": ""
+    "backgroundImage": "/uploads/hero-biblioteca.jpg"
   },
   "context": [
     {
@@ -35,42 +49,38 @@
   "videoButtonLabel": "Ver análise",
   "videos": [
     {
-      "cover": "",
       "title": "Revolução Francesa — explicação extensa",
       "subtitle": "50:17",
       "youtubeUrl": "",
-      "analysis": "Escreva aqui a análise deste vídeo, considerando os critérios de **narrativa**, **fontes**, **temporalidade**, **participação** e **usos públicos do passado**."
+      "analysis": "Escreva aqui a análise deste vídeo, considerando os critérios de **narrativa**, **fontes**, **temporalidade**, **participação** e **usos públicos do passado**.\n"
     },
     {
-      "cover": "",
       "title": "Revolução Francesa em 5 minutos",
       "subtitle": "5:03",
       "youtubeUrl": "",
-      "analysis": "Escreva aqui a análise deste vídeo."
+      "analysis": "Escreva aqui a análise deste vídeo.\n"
     },
     {
-      "cover": "",
       "title": "O “Descobrimento” do Brasil (Episódio 1 — Porto Seguro)",
       "subtitle": "18:45",
       "youtubeUrl": "",
-      "analysis": "Escreva aqui a análise deste vídeo."
+      "analysis": "Escreva aqui a análise deste vídeo.\n"
     },
     {
-      "cover": "",
-      "title": "Ciclo do Ouro (Episódio 6 — Sabará)",
-      "subtitle": "17:28",
-      "youtubeUrl": "",
-      "analysis": "Escreva aqui a análise deste vídeo."
+      "title": "CICLO DO OURO - HISTÓRIA DO BRASIL PELO BRASIL",
+      "subtitle": "Episódio 1 - Sabará-MG",
+      "youtubeUrl": "https://youtu.be/V7QXlsZs1Po",
+      "analysis": "Escreva aqui a análise deste vídeo.\n"
     }
   ],
   "synthesis": {
     "title": "Síntese comparativa",
     "summary": "O que a análise dos vídeos revela sobre as relações entre Ensino de História, divulgação histórica e História Pública na produção de Débora Aladim?",
-    "text": "Escreva aqui o texto completo da síntese comparativa. Ele aparece quando o visitante clica em “Acessar síntese”.",
+    "text": "Escreva aqui o texto completo da síntese comparativa. Ele aparece quando o visitante clica em “Acessar síntese”.\n",
     "buttonLabel": "Acessar síntese"
   },
   "references": {
     "title": "Referências",
-    "text": "SOBRENOME, Nome. *Título da obra*. Cidade: Editora, ano."
+    "text": "SOBRENOME, Nome. *Título da obra*. Cidade: Editora, ano.\n"
   }
 }
