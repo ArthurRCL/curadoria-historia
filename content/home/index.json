@@ -42,12 +42,12 @@
     {
       "icon": "pessoas",
       "title": "Como analisamos os vídeos",
-      "text": "Na análise consideramos cinco aspectos:\n\n1. Finalidade, público e acessibilidade: a proposta dos vídeos, a quem se dirigem e como apresentam os conteúdos.\n\n2. Narrativa, fontes e problematização: como os acontecimentos históricos são explicados, interpretados e fundamentados.\n\n3. Participação e autoridade: as possibilidades de participação de outras pessoas na construção do conhecimento histórico.\n\n4. Usos públicos do passado: como os vídeos relacionam o passado à memória, ao patrimônio e ao presente.\n\n5. Ética e responsabilidade pública: o cuidado com as informações históricas e a representação dos diferentes sujeitos."
+      "text": "1. Finalidade, público e acessibilidade: a proposta dos vídeos, a quem se dirigem e como apresentam os conteúdos.\n\n2. Narrativa, fontes e problematização: como os acontecimentos históricos são explicados, interpretados e fundamentados.\n\n3. Participação e autoridade: as possibilidades de participação de outras pessoas na construção do conhecimento histórico.\n\n4. Usos públicos do passado: como os vídeos relacionam o passado à memória, ao patrimônio e ao presente.\n\n5. Ética e responsabilidade pública: o cuidado com as informações históricas e a representação dos diferentes sujeitos."
     }
   ],
   "selectionCriteria": {
     "title": "Critérios de seleção dos vídeos",
-    "text": "Selecionamos quatro vídeos do canal de Débora Aladim com base em três critérios:\n\n* **Diversidade temática:** abordam diferentes processos históricos (Revolução Francesa, chegada dos portugueses ao Brasil e ciclo do ouro).\n* **Variedade de abordagens:** articulam formatos, temporalidades e estratégias narrativas distintas.\n* **Potencial analítico:** permitem discutir, em conjunto, as aproximações, tensões e limites entre divulgação histórica e História Pública.\n"
+    "text": "* **Diversidade temática:** abordam diferentes processos históricos (Revolução Francesa, chegada dos portugueses ao Brasil e ciclo do ouro).\n* **Variedade de abordagens:** articulam formatos, temporalidades e estratégias narrativas distintas.\n* **Potencial analítico:** permitem discutir, em conjunto, as aproximações, tensões e limites entre divulgação histórica e História Pública.\n"
   },
   "videosTitle": "Os vídeos selecionados",
   "videoButtonLabel": "Ver análise",
