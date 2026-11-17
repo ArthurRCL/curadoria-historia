@@ -1,7 +1,7 @@
 "use client";
 import { useTina } from "tinacms/dist/react";
 import type { HomeQuery, HomeQueryVariables } from "@/tina/__generated__/types";
-import { ContextCards } from "./context-cards";
+import { ContextCards, SelectionCriteria } from "./context-cards";
 import { Hero, SiteHeader } from "./site-header";
 import { References, Synthesis } from "./synthesis";
 import { VideoGrid } from "./video-grid";
@@ -29,9 +29,12 @@ export default function HomeClient(props: HomeClientProps) {
       <main>
         {home.header && <Hero header={home.header} />}
         <ContextCards home={home} />
+        {home.selectionCriteria && <SelectionCriteria criteria={home.selectionCriteria} />}
         <VideoGrid home={home} />
         {home.synthesis && <Synthesis synthesis={home.synthesis} />}
-        {home.references && <References references={home.references} />}
+        {(home.references || home.credits) && (
+          <References references={home.references} credits={home.credits} />
+        )}
       </main>
       <footer className="bg-wine-900 px-4 py-6 text-center text-sm text-white/80 sm:px-6">
         {home.header?.siteName}

@@ -45,6 +45,10 @@
       "text": "Na análise consideramos cinco aspectos:\n\n1. Finalidade, público e acessibilidade: a proposta dos vídeos, a quem se dirigem e como apresentam os conteúdos.\n\n2. Narrativa, fontes e problematização: como os acontecimentos históricos são explicados, interpretados e fundamentados.\n\n3. Participação e autoridade: as possibilidades de participação de outras pessoas na construção do conhecimento histórico.\n\n4. Usos públicos do passado: como os vídeos relacionam o passado à memória, ao patrimônio e ao presente.\n\n5. Ética e responsabilidade pública: o cuidado com as informações históricas e a representação dos diferentes sujeitos."
     }
   ],
+  "selectionCriteria": {
+    "title": "Critérios de seleção dos vídeos",
+    "text": "Selecionamos quatro vídeos do canal de Débora Aladim com base em três critérios:\n\n* **Diversidade temática:** abordam diferentes processos históricos (Revolução Francesa, chegada dos portugueses ao Brasil e ciclo do ouro).\n* **Variedade de abordagens:** articulam formatos, temporalidades e estratégias narrativas distintas.\n* **Potencial analítico:** permitem discutir, em conjunto, as aproximações, tensões e limites entre divulgação histórica e História Pública.\n"
+  },
   "videosTitle": "Os vídeos selecionados",
   "videoButtonLabel": "Ver análise",
   "videos": [
@@ -78,6 +82,11 @@
     "summary": "O que a análise dos vídeos revela sobre as relações entre Ensino de História, divulgação histórica e História Pública na produção de Débora Aladim?",
     "text": "Os quatro vídeos selecionados apresentam diferentes formas de divulgar conhecimentos históricos no YouTube. As produções sobre a Revolução Francesa utilizam formatos de duração distintos, enquanto os episódios sobre o “Descobrimento” do Brasil e o Ciclo do Ouro são gravados em cidades históricas, com o apoio de mapas, documentos, imagens e outros recursos audiovisuais.\n\nNos episódios de Porto Seguro e Sabará, os espaços históricos são utilizados principalmente para contextualizar os acontecimentos. Entretanto, há diferenças na abordagem das fontes e do patrimônio: no primeiro, Débora interpreta trechos da Carta de Pero Vaz de Caminha; no segundo, relaciona a mineração colonial à conservação de parte das construções históricas e a problemas ambientais contemporâneos.\n\nAs produções permitem discutir as relações entre Ensino de História, divulgação histórica e História Pública. A linguagem acessível e as estratégias de comunicação favorecem a circulação do conhecimento histórico, mas não significam, necessariamente, a participação dos públicos na construção das narrativas. Essa distinção nos convida a refletir sobre as possibilidades e os limites da produção histórica no ambiente digital.\n",
     "buttonLabel": "Acessar síntese"
+  },
+  "credits": {
+    "title": "Créditos e autoria",
+    "text": "Curadoria digital desenvolvida por **Elilza Rodrigues Correia Lira** e **Verônica [Sobrenome]**, como atividade acadêmica da disciplina Ensino de História e História Pública, do Doutorado Profissional em Ensino de História (ProfHistória/UFG).\n",
+    "year": "2026"
   },
   "references": {
     "title": "Referências",

@@ -229,7 +229,7 @@ function VideoAnalysisDialog({
 
           <div
             data-tina-field={tinaField(video, "analysis")}
-            className="prose prose-neutral mt-6 max-w-none prose-headings:font-serif prose-headings:text-wine-900 prose-a:text-wine-700"
+            className="prose prose-neutral mt-6 max-w-none text-justify hyphens-auto prose-headings:font-serif prose-headings:text-wine-900 prose-a:text-wine-700"
           >
             <TinaMarkdown content={video.analysis} />
           </div>

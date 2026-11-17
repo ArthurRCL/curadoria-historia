@@ -1,9 +1,9 @@
 "use client";
-import { BookOpen, ChevronDown, Scale } from "lucide-react";
+import { BookOpen, ChevronDown, Scale, UserRound } from "lucide-react";
 import { useState } from "react";
 import { tinaField } from "tinacms/dist/react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import type { ReferencesData, SynthesisData } from "./types";
+import type { CreditsData, ReferencesData, SynthesisData } from "./types";
 
 export function Synthesis({ synthesis }: { synthesis: SynthesisData }) {
   const [open, setOpen] = useState(false);
@@ -29,7 +29,7 @@ export function Synthesis({ synthesis }: { synthesis: SynthesisData }) {
             {synthesis.summary && (
               <p
                 data-tina-field={tinaField(synthesis, "summary")}
-                className="mt-1.5 leading-relaxed text-neutral-700"
+                className="mt-1.5 whitespace-pre-line text-justify leading-relaxed text-neutral-700 hyphens-auto"
               >
                 {synthesis.summary}
               </p>
@@ -62,7 +62,7 @@ export function Synthesis({ synthesis }: { synthesis: SynthesisData }) {
           <div className="overflow-hidden">
             <div
               data-tina-field={tinaField(synthesis, "text")}
-              className="prose prose-neutral max-w-none border-t border-wine-900/10 px-6 py-6 prose-headings:font-serif prose-headings:text-wine-900 prose-a:text-wine-700 md:px-8"
+              className="prose prose-neutral max-w-none border-t border-wine-900/10 px-6 py-6 text-justify hyphens-auto prose-headings:font-serif prose-headings:text-wine-900 prose-a:text-wine-700 md:px-8"
             >
               <TinaMarkdown content={synthesis.text} />
             </div>
@@ -73,22 +73,59 @@ export function Synthesis({ synthesis }: { synthesis: SynthesisData }) {
   );
 }
 
-export function References({ references }: { references: ReferencesData }) {
+export function References({
+  references,
+  credits,
+}: {
+  references?: ReferencesData | null;
+  credits?: CreditsData | null;
+}) {
   return (
-    <section id="referencias" className="scroll-mt-16 bg-sand px-4 py-10 sm:px-6">
-      <div className="mx-auto max-w-6xl">
-        <h2 className="flex items-center gap-3 font-serif text-xl font-bold text-wine-800">
-          <BookOpen aria-hidden className="h-6 w-6 text-wine-700" strokeWidth={1.5} />
-          <span data-tina-field={tinaField(references, "title")}>
-            {references.title || "Referências"}
-          </span>
-        </h2>
-        <div
-          data-tina-field={tinaField(references, "text")}
-          className="prose prose-sm prose-neutral mt-4 max-w-none prose-a:text-wine-700"
-        >
-          <TinaMarkdown content={references.text} />
-        </div>
+    <section className="bg-sand px-4 py-10 sm:px-6">
+      <div className="mx-auto max-w-6xl divide-y divide-wine-900/15">
+        {/* 1º Créditos e autoria */}
+        {credits && (
+          <div id="creditos" className="scroll-mt-16 pb-8">
+            <h2 className="flex items-center gap-3 font-serif text-xl font-bold text-wine-800">
+              <UserRound aria-hidden className="h-6 w-6 text-wine-700" strokeWidth={1.5} />
+              <span data-tina-field={tinaField(credits, "title")}>
+                {credits.title || "Créditos e autoria"}
+              </span>
+            </h2>
+            <div
+              data-tina-field={tinaField(credits, "text")}
+              className="prose prose-sm prose-neutral mt-4 max-w-none text-justify hyphens-auto prose-a:text-wine-700"
+            >
+              <TinaMarkdown content={credits.text} />
+            </div>
+            {credits.year && (
+              <p
+                data-tina-field={tinaField(credits, "year")}
+                className="mt-3 font-serif text-lg font-bold text-wine-900"
+              >
+                {credits.year}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* 2º Referências (por último) */}
+        {references && (
+          <div id="referencias" className="scroll-mt-16 pt-8 first:pt-0">
+            <h2 className="flex items-center gap-3 font-serif text-xl font-bold text-wine-800">
+              <BookOpen aria-hidden className="h-6 w-6 text-wine-700" strokeWidth={1.5} />
+              <span data-tina-field={tinaField(references, "title")}>
+                {references.title || "Referências"}
+              </span>
+            </h2>
+            <div
+              data-tina-field={tinaField(references, "text")}
+              className="prose prose-sm prose-neutral mt-4 max-w-none prose-a:text-wine-700"
+            >
+              <TinaMarkdown content={references.text} />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

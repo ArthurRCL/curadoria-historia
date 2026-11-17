@@ -11,4 +11,6 @@ export type ContextItem = ListItem<HomeData["context"]>;
 export type VideoItem = ListItem<HomeData["videos"]>;
 export type SynthesisData = NonNullable<HomeData["synthesis"]>;
 export type ReferencesData = NonNullable<HomeData["references"]>;
+export type SelectionCriteriaData = NonNullable<HomeData["selectionCriteria"]>;
+export type CreditsData = NonNullable<HomeData["credits"]>;
 

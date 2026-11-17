@@ -136,6 +136,22 @@ const Home: Collection = {
       ],
     },
 
+    /* ------------------- CRITÉRIOS DE SELEÇÃO DOS VÍDEOS ------------------ */
+    {
+      type: "object",
+      name: "selectionCriteria",
+      label: "Critérios de seleção dos vídeos",
+      fields: [
+        { type: "string", name: "title", label: "Título" },
+        {
+          type: "rich-text",
+          name: "text",
+          label: "Texto",
+          description: "Use a lista com marcadores e o negrito da barra de ferramentas para os critérios.",
+        },
+      ],
+    },
+
     /* -------------------------------- VÍDEOS ------------------------------ */
     {
       type: "string",
@@ -227,6 +243,18 @@ const Home: Collection = {
       fields: [
         { type: "string", name: "title", label: "Título" },
         { type: "rich-text", name: "text", label: "Lista de referências" },
+      ],
+    },
+
+    /* -------------------------- CRÉDITOS E AUTORIA ------------------------ */
+    {
+      type: "object",
+      name: "credits",
+      label: "Créditos e autoria",
+      fields: [
+        { type: "string", name: "title", label: "Título" },
+        { type: "rich-text", name: "text", label: "Texto" },
+        { type: "string", name: "year", label: "Ano", description: "Ex.: 2026" },
       ],
     },
   ],

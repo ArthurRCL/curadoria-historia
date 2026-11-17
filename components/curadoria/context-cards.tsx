@@ -1,6 +1,8 @@
+import { Clapperboard } from "lucide-react";
 import { tinaField } from "tinacms/dist/react";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { ContextIcon } from "./icons";
-import type { HomeData } from "./types";
+import type { HomeData, SelectionCriteriaData } from "./types";
 
 export function ContextCards({ home }: { home: HomeData }) {
   const items = (home.context ?? []).filter(Boolean);
@@ -34,7 +36,7 @@ export function ContextCards({ home }: { home: HomeData }) {
               {item?.text && (
                 <p
                   data-tina-field={tinaField(item, "text")}
-                  className="mt-1.5 text-sm leading-relaxed text-neutral-700"
+                  className="mt-1.5 whitespace-pre-line text-justify text-sm leading-relaxed text-neutral-700 hyphens-auto"
                 >
                   {item.text}
                 </p>
@@ -47,3 +49,30 @@ export function ContextCards({ home }: { home: HomeData }) {
   );
 }
 
+
+/** Critérios de seleção dos vídeos — mesmo cartão bege dos blocos de contexto. */
+export function SelectionCriteria({ criteria }: { criteria: SelectionCriteriaData }) {
+  return (
+    <section id="criterios" className="scroll-mt-16 px-4 pt-8 sm:px-6">
+      <div className="mx-auto flex max-w-6xl flex-col gap-5 rounded-2xl bg-sand p-6 shadow-sm ring-1 ring-wine-900/10 md:flex-row md:items-center md:gap-8 lg:p-7">
+        <div className="flex items-center gap-4 md:w-72 md:shrink-0 md:self-stretch">
+          <Clapperboard aria-hidden className="h-9 w-9 shrink-0 text-wine-700" strokeWidth={1.5} />
+          <h2
+            data-tina-field={tinaField(criteria, "title")}
+            className="font-serif text-2xl font-bold leading-tight text-wine-800"
+          >
+            {criteria.title || "Critérios de seleção dos vídeos"}
+          </h2>
+          <span aria-hidden className="ml-auto hidden w-px self-stretch bg-wine-900/15 md:block" />
+        </div>
+
+        <div
+          data-tina-field={tinaField(criteria, "text")}
+          className="prose prose-sm prose-neutral max-w-none flex-1 text-justify hyphens-auto marker:text-wine-700 prose-p:my-1.5 prose-li:my-1 prose-strong:text-wine-900 [&_ul]:list-[square]"
+        >
+          <TinaMarkdown content={criteria.text} />
+        </div>
+      </div>
+    </section>
+  );
+}
